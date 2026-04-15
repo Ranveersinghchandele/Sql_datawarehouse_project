@@ -1,2 +1,2 @@
 # Sql_datawarehouse_project
-A modern data warehouse using sql server. 
+This is a sql warehouse project.
