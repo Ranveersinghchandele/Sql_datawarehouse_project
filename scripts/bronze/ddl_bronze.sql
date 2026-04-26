@@ -25,7 +25,7 @@
 -- =========================
 -- CRM TABLES
 -- =========================
-
+USE DataWarehouse;
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 
@@ -78,11 +78,8 @@ IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 
 CREATE TABLE bronze.erp_loc_a101 (
-    loc_id INT,
-    loc_name VARCHAR(255),
-    loc_city VARCHAR(100),
-    loc_state VARCHAR(100),
-    loc_country VARCHAR(100)
+    cid VARCHAR(100),
+    cntry VARCHAR(100)
 );
 
 
@@ -100,7 +97,7 @@ IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 
 CREATE TABLE bronze.erp_px_cat_g1v2 (
-    id INT,
+    id VARCHAR(20),
     cat VARCHAR(100),
     subcat VARCHAR(100),
     maintenance VARCHAR(50)
