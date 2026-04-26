@@ -90,7 +90,7 @@ IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 
 CREATE TABLE bronze.erp_cust_az12 (
-    cid INT,
+    cid VARCHAR(50),
     bdate VARCHAR(50),
     gen VARCHAR(20)
 );
